@@ -91,7 +91,7 @@ const badgeStyle = {
 };
 
 const IndexPage: React.FC<PageProps> = () => {
-	return <main style={pageStyles}></main>;
+	return <main style={pageStyles}>index</main>;
 };
 
 export default IndexPage;
