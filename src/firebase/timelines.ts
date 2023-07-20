@@ -1,5 +1,5 @@
 import db from "./firebase";
-import { collection, getDocs } from "firebase/firestore/lite";
+import { collection, getDocs, QuerySnapshot } from "firebase/firestore/lite";
 
 const getTimelines = async () => {
 	const timelinesCollection = collection(db, "timelines");
