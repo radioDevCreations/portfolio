@@ -1,4 +1,15 @@
+:root {
+	--oxfordBlue: #020025;
+	--azul: #016fb9;
+	--pacificCyan: #22aed1;
+	--babyPowder: #fffffa;
+	--africanViolet: #ab92bf;
+}
 * {
 	margin: 0;
 	padding: 0;
+}
+body {
+	background-color: var(--oxfordBlue);
+	color: var(--babyPowder);
 }
