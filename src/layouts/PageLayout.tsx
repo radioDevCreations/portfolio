@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import MainManu from "../components/MainMenu";
 
 interface LayoutProps {
 	style: React.CSSProperties;
@@ -12,7 +13,12 @@ const PageLayout: React.FC<LayoutProps> = ({
 	style,
 	children,
 }: LayoutProps) => {
-	return <PageMain style={style}>{children}</PageMain>;
+	return (
+		<PageMain style={style}>
+			{children}
+			<MainManu isOpen={isMenuOpen}></MainManu>
+		</PageMain>
+	);
 };
 
 export default PageLayout;
